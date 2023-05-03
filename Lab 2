@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Laboratorio 2 JavaScript</title>
+    </head>
+    <body>
+        <h1>LABORATORIO 2</h1>
+        <br>
+        <!--Pregunta 1 --> 
+         <p>1. ¿Qué es Javascript y en qué se asemeja a Java?</p>
+           <p>JavaScript es un mecanismo con el que le decimos al ordenador que tareas realizar en que orden y cuantas veces.<br>
+               JavaScript se asemeja a Java solo en el nombre, ya que ambos son lenguajes de programacion pero no tienen
+               relacion en comun.
+           </p>
+        <!--Pregunta 2 -->
+        <p>2. Operaciones con dos numeros:</p>
+        <input id="num1"><br>  
+        <input id="num2">  
+        <button type="button" onclick="operaciones()">Calcular</button> 
+        <p id="Suma"></p>
+        <p id="Resta"></p>
+        <p id="Multiplicacion"></p>
+        <p id="Division"></p>
+        <script> 
+        function operaciones(){
+            var num1; var num2;
+            num1=document.getElementById("num1").value;
+            num2=document.getElementById("num2").value;
+            Suma= parseInt(num1) + parseInt(num2);
+            Resta= parseInt(num1) - parseInt(num2);
+            Mult= parseInt(num1) * parseInt(num2);
+            Div= parseFloat(num1) / parseFloat(num2);
+
+            document.getElementById("Suma").innerHTML= "La suma de los numeros es:" + Suma;
+            document.getElementById("Resta").innerHTML= "La resta de los numeros es:" + Resta;
+            document.getElementById("Multiplicacion").innerHTML= "La multiplicacion de los numeros es:" + Mult;
+            document.getElementById("Division").innerHTML= "La division de los numeros es:" + Div;
+        }
+        </script><br>
+        <p>3. Concatenacion con palabras reservadas let, palabra1= "java" palabra2="script" </p>
+        <button type="button" onclick="concatenar()">Concatenacion</button> 
+        <p id="palabra"></p>
+        <script>
+            function concatenar(){ 
+                let palabra1= "java"; let palabra2="script";
+                union=palabra1+palabra2;
+                document.getElementById("palabra").innerHTML=union;
+            }     
+        </script><br>
+        <p>4. Dos variables con palabra reservada const</p>
+        <button type="button" onclick="datos()">Const</button> 
+        <p id="dato1"></p>
+        <p id="dato2"></p>
+        <script>
+            function datos(){
+                const dat1=52; 
+                const dat2='ghdd';
+                document.getElementById("dato1").innerHTML= typeof dat1;
+                document.getElementById("dato2").innerHTML= typeof dat2;
+            }
+        </script><br>
+        <p>5. Variables tipo objeto</p>
+        <button type="button" onclick="objeto()">Objeto</button>
+        <p id="obj1"></p>
+        <p id="obj2"></p>
+        <p id="obj3"></p>
+        <p id="obj4"></p>
+        <script>
+            function objeto(){
+                var lista={entero:"12", 
+                string:'hola',
+                booleano:"true",
+                vacio: new Object()
+              }
+            document.getElementById("obj1").innerHTML=lista.entero;
+            document.getElementById("obj2").innerHTML=lista.string;
+            document.getElementById("obj3").innerHTML=lista.booleano;
+            document.getElementById("obj4").innerHTML=lista.vacio;
+            }
+        </script>
+        <p>6. Funcion que tome un numero positivo entero y devuelva la suma de todos los numeros menores  que sean multiplos de 3 o 5</p>
+        <input type="number" id="numero"><br>
+        <button type="button" Onclick="suma()">Suma</button>
+        <script>
+            function suma(){
+                var numero; var suma; var resultado;
+                numero= document.getElementById("numero").value;
+                while(numero!=0){
+                    
+                   if((numero%3==0 || numero%5==0)){
+                        suma=numero;
+                        resultado+=suma
+                    }
+                    numero--;    
+                }
+                console.log("La suma de los numeros es:",resultado);
+                
+
+            }
+        </script>
+
+    </body>
+    </html>
