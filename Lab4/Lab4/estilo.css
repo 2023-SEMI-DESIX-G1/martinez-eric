@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body{
+    padding: 1rem;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card h1{
+    font-size: 1.5rem;
+    font-weight: 800;
+    margin-bottom: 1rem;
+}
+.card{
+    background-color: gainsboro;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.body-card{
+    display: flex;
+    gap: 0.1rem;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+.body-card input{
+    padding: 0.1rem 0.5rem;
+    border-radius: 5px;
+    border: 1px solid black;
+    width: 300px;
+}
+
+.pie-card{
+    display: flex;
+    flex-direction: row-reverse;
+}
+.pie-card button{
+    background-color: darkred;
+    color: white;
+    border: unset;
+    border-radius: 5px;
+    padding: 0.5rem 2rem;   
+}
+
+#fibon-results{
+    margin-top: 2rem;
+    display: flex;
+    gap: 1rem;
+}
+
+#fibon-results .grupo_num{
+    display: flex;
+    justify-content: center;
+    width: 0.3rem;
+    padding: 0.8rem;
+    border-radius: 5px;
+    margin-bottom: 0.5rem;
+    background-color: darkred;
+    color: white; 
+}
+
+#fibon-results .grupo_close{
+    color:black;
+    justify-content: center;
+
+}
