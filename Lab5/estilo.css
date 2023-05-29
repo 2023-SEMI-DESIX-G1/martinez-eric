@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap');
+
+body{
+    padding: 0.5rem;
+    font-family: 'Open Sans', sans-serif;
+    color: green;
+    
+}
+
+section{
+    background-color: azure;
+    padding: 0.5rem;
+    border-radius: 2px;
+}
+
+h1{
+    font-size: 2rem;
+    font-weight: 800;
+    margin-bottom: 0.2rem;
+}
+
+.cuerpo{
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.5rem;
+    flex-direction: unset;
+}
+.cuerpo input{
+    border: 0.6px solid rgb(54, 206, 54);
+    width: 50px;
+    padding: 0.1rem 0.4rem;
+    border-radius: 2px;
+    
+}
+
+.botons{
+    display: flex;
+    flex-direction:row;
+}
+
+.botons button{
+    background-color: forestgreen;
+    border-radius: 25px;
+    border: unset;
+    padding: 0.5rem 1rem;
+    color: white;
+}
+
+.botons button:hover{
+    background-color: gray;
+    color: black;
+}
+
+
+    

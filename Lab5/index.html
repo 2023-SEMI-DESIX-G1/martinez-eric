@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Calculadora de Notas</title>
+</head>
+<body>
+    <main>
+        <section>
+            <form id="calc_notas">
+                    <div class="titulo">
+                        <h1>Calculo de notas</h1>
+                    </div>
+                    <div class="cuerpo">
+                        <label for="num">Cantidad de notas a ingresar</label>        
+                        <input type="number" id="numero"><br>
+                    </div>
+                    <div class="botons">
+                        <button type="submit" value="crear">Crear casilla de nota</button> 
+                        <br>
+                        <button type="submit" value="calcular">Calcular Nota</button>
+                    </div>
+            </form>
+        </section>
+        <section>
+                <div id="results"></div> 
+        </section>
+    </main>
+    <script src="desarrollo.js"></script>
+</body>
+</html>
